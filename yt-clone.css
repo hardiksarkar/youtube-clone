@@ -1,0 +1,214 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+hr{
+  border: none;
+  height: 1px;
+  background-color: #303030;
+}
+
+/* header  */
+header {
+  position: sticky;
+  top: 0px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0.7rem;
+  background-color: #212121;
+  padding-bottom: 0.5rem;
+}
+nav button,
+nav svg {
+  cursor: pointer;
+}
+nav > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav > div * {
+  margin: 0px 0.5rem;
+}
+
+#search {
+  width: 30vw;
+  padding: 0.5rem;
+  background-color: black;
+  border: none;
+  color: white;
+}
+#search-div {
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+#search-div > input {
+  margin: 0;
+}
+#microphone {
+  background-color: #000000;
+  border-radius: 50%;
+  margin: 0 0.3rem;
+  padding: 0.5rem;
+}
+#microphone > svg {
+  margin: 0 0.3rem;
+}
+
+#user-logo > img {
+  margin: 0;
+  border-radius: 50%;
+}
+
+/* main  */
+
+#main-container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+/* left sidebar  */
+
+#left-sidebar-container {
+  height: 92.8vh;
+  overflow-y: scroll;
+}
+#left-sidebar-container::-webkit-scrollbar {
+  width: 0px;
+}
+#left-sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #212121;
+  color: white;
+  height: 100vh;
+}
+#left-sidebar > div > div {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1.4rem;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+#left-sidebar hr {
+  border: none;
+  height: 1px;
+  margin: 0.7rem 0rem;
+  margin-right: 0.8rem;
+  background-color: #303030;
+}
+#left-sidebar > div > div:hover {
+  background-color: #303030;
+}
+#left-sidebar > div > div p {
+  margin-left: 1.5rem;
+}
+
+#mySubscriptions{
+  padding: 0.7rem 1.4rem;
+  margin-right: 0.8rem;
+}
+
+/* right content  */
+
+#right-content {
+  background-color: black;
+  height: 92.8vh;
+  overflow-y: scroll;
+}
+#right-content::-webkit-scrollbar{
+  width: 10px;
+}
+#right-content::-webkit-scrollbar-thumb{
+  background-color: #454545;
+  border-radius: 50px;
+}
+#upper-bar-sticky > hr {
+  border: none;
+  height: 1px;
+  background-color: var(--border-color, #303030);
+}
+/* upper bar  */
+#upper-bar-sticky{
+  position: sticky;
+  top: 0px;
+}
+#upper-bar {
+
+  display: flex;
+  padding: 0px 12px;
+  background-color: #212121;
+}
+#upper-bar > button {
+  display: flex;
+  padding: 8px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 12px 12px 12px 0px;
+  gap: 10px;
+  border-radius: 32px;
+  border: 0.3px solid var(--Gray-Color, #aaa);
+  background: var(--border-color, #303030);
+  color: white;
+  cursor: pointer;
+}
+#upper-bar > button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* lower content  */
+
+#lower-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.8rem;
+  color: white;
+  padding: 1rem;
+}
+
+.video-cards >div:nth-child(1)> img {
+  width: 100%;
+}
+
+.video-card-body {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.4rem;
+}
+.video-card-body > img {
+  border-radius: 50%;
+  margin-right: 1rem;
+  width: 3rem;
+}
+.channel-name,
+.time,
+.title {
+  font-size: 0.8rem;
+}
+.channel-name{
+    cursor: pointer;
+}
+.title {
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+.title:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.channel-name,
+.time {
+  color: #aaaaaa;
+}

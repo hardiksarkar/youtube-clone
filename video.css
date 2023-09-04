@@ -1,0 +1,103 @@
+
+body{
+    background-color: #181818;;
+}
+
+#video-main-container{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 1rem;
+    margin: 0rem 10rem;
+    color: white;
+}
+
+/* left section  */
+
+#left-section svg{
+    cursor: pointer;
+}
+
+#left-section{
+    display: flex;
+    flex-direction: column;
+}
+
+#main-video-div{
+    position: relative;
+}
+
+#title-and-info{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 0rem 1rem;
+    position: absolute;
+    top: 5%;
+}
+#main-video{
+    width: 45rem;
+    margin: 1rem 0rem;
+}
+
+/* progress bar  */
+
+#progress-bar{
+    display: grid;
+    height: 0.2rem;
+    margin: 0rem 1rem;
+    grid-template-columns: 4fr 2fr 5fr;
+    background-color: rgba(234, 234, 234, 0.20);;
+}
+#progress-bar>div:nth-child(1){
+    background-color: #FC0D1C;
+}
+#progress-bar>div:nth-child(2){
+    background-color: #EAEAEA80;
+}
+
+/* video controls */
+#video-controls{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+}
+
+#left-right-controls{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.8rem 1.5rem;
+}
+
+#left-controls,#right-controls{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#left-controls>*{
+    margin-right: 1rem;
+}
+#right-controls>*{
+    margin-left: 1rem;
+}
+
+/* views-likes div  */
+
+#views-likes{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.8rem 0rem;
+}
+
+/* like share save  */
+#like-share-save{
+    display: flex;
+}
+#like-share-save>div{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+#like-share-save>div *{
+    margin: 0rem 0.4rem;
+}
